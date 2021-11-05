@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,700&family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    background-image: url(img/wallpapersden.com_purple-sunrise-4k-vaporwave_1920x1080.jpg);
+    background-attachment: fixed;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Noto Sans', Roboto;
+    padding-bottom: 4rem;
+}
+
+#title {
+color: #fff;
+}
+
+#description {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+#survey-form {
+    width: 50%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.781);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 15px;
+    border: 2px solid rgb(250, 3, 127);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#name-label, #email-label, #number-label {
+    width: 100%;
+} 
+
+#name {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: rgb(250, 3, 127);
+    font-size: 1.2rem;
+}
+
+#email {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#number {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#dropdown {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+
+#question {
+    margin-bottom: 20px;
+}
+
+label {
+    color: rgb(250, 3, 127);
+}
+
+#input-radio-last {
+    margin-bottom: 25px;
+}
+
+input {
+    padding-left: 10px;
+}
+.input-radio {
+    margin-right: 5px;
+}
+
+#input-computer {
+    width: 100%;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+
+#input-computer {
+    margin-top: 20px;
+}
+
+.checkboxes {
+margin-right: 10px;
+}
+
+.last-checkbox {
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.box1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    padding: 4px;
+    width: 100%;
+    border-radius: 7px;
+} 
+
+.feedback-title {
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(250, 3, 127);
+    color: #fff;
+    border: 3px solid rgb(255, 1, 191);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+ @media (max-width: 800px) {
+    #survey-form {
+        width: 80%;
+    }
+} 
+
+ @media (max-width: 500px) {
+    #survey-form {
+        width: 90%;
+    }
+} 

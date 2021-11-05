@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title"> Survey form</h1>
+    <p id="description">Thank you for your time</p>
+    <form id="survey-form">
+
+        <label id="name-label">
+            <h2 id="name-label">Name</h2>
+            <input id="name" type="text" placeholder="Name" required>
+        </label>
+
+        <label id="email-label">
+            <h2 id="email-label">Email</h2>
+            <input id="email" type="email" placeholder="Email" required>
+        </label>
+
+        <label id="number-label">
+            <h2 id="number-label">Age</h2>
+            <input id="number" type="number" placeholder="Age" min="5" max="90" required>
+        </label>
+
+        <h2>Which city do u live</h2>
+
+        <select id="dropdown" name="role" required>
+            <option disabled selected value>Select current city</option>
+            <option value="Jeppis">Jeppis</option>
+            <option value="Kokkola">Kokkola</option>
+            <option value="Vasa">Vasa</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <h2 id="question">Do u have a computer</h2>
+        <label>
+            <input class="input-radio" name="computer" value="Yes" type="radio" checked />
+            Yes
+        </label>
+
+        <label>
+            <input class="input-radio" name="computer" value="Maybe" type="radio" />
+            Maybe
+        </label>
+
+        <label id="input-radio-last"><input class="input-radio" name="computer" value="No" type="radio" />
+            No
+        </label>
+
+        <h2>What do u use your computer for?</h2>
+        <input id="input-computer" placeholder="Work, school..." type="text" required>
+
+        <h2>How many hours do u use your computer?</h2>
+
+        <label id="checkbox-label">
+            <input class="checkboxes" value="virpi" type="checkbox" checked>1-2h a day
+        </label>
+
+        <label>
+            <input class="checkboxes" value="emppu" type="checkbox">3-4h a day
+        </label>
+
+        <label>
+            <input class="checkboxes" value="evelina" type="checkbox">5-6h a day
+        </label>
+
+        <label>
+            <input class="last-checkbox" value="virpi" type="checkbox">7h+ a day
+        </label>
+
+        <div class="box1">
+            <h2 class="feedback-title">Feedback</h2>
+            <textarea name="Feedback" placeholder="feedback..." id="feedback-box" rows="7"></textarea>
+        </div>
+
+        <button id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
